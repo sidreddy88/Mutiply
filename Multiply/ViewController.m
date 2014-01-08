@@ -16,9 +16,14 @@
     __weak IBOutlet UILabel *myAnswer;
 }
 
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+
+
+
 @end
 
 @implementation ViewController
+@synthesize slider;
 - (IBAction)onCalculateButtonPressed:(id)sender {
     
     int number = [myNumber.text intValue];
@@ -32,9 +37,17 @@
     
 }
 
+- (IBAction)sliderValueChanged:(id)sender {
+    int good = (int)slider.value;
+    myMultiplier.text = [NSString stringWithFormat:@"%i",good];
+}
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

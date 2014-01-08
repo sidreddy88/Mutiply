@@ -21,6 +21,7 @@
 		D12CE94E187D013000817CD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12CE930187D013000817CD4 /* UIKit.framework */; };
 		D12CE956187D013000817CD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D12CE954187D013000817CD4 /* InfoPlist.strings */; };
 		D12CE958187D013000817CD4 /* MultiplyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12CE957187D013000817CD4 /* MultiplyTests.m */; };
+		D12CE964187D0B4F00817CD4 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12CE963187D0B4F00817CD4 /* CheckMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D12CE953187D013000817CD4 /* MultiplyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiplyTests-Info.plist"; sourceTree = "<group>"; };
 		D12CE955187D013000817CD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D12CE957187D013000817CD4 /* MultiplyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplyTests.m; sourceTree = "<group>"; };
+		D12CE963187D0B4F00817CD4 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../../../Downloads/CheckMate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12CE964187D0B4F00817CD4 /* CheckMate.framework in Frameworks */,
 				D12CE92F187D013000817CD4 /* CoreGraphics.framework in Frameworks */,
 				D12CE931187D013000817CD4 /* UIKit.framework in Frameworks */,
 				D12CE92D187D013000817CD4 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		D12CE92B187D013000817CD4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D12CE963187D0B4F00817CD4 /* CheckMate.framework */,
 				D12CE92C187D013000817CD4 /* Foundation.framework */,
 				D12CE92E187D013000817CD4 /* CoreGraphics.framework */,
 				D12CE930187D013000817CD4 /* UIKit.framework */,
@@ -378,6 +382,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sidreddy/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multiply/Multiply-Prefix.pch";
 				INFOPLIST_FILE = "Multiply/Multiply-Info.plist";
@@ -391,6 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sidreddy/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multiply/Multiply-Prefix.pch";
 				INFOPLIST_FILE = "Multiply/Multiply-Info.plist";
@@ -460,6 +472,7 @@
 				D12CE95D187D013000817CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D12CE95E187D013000817CD4 /* Build configuration list for PBXNativeTarget "MultiplyTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				D12CE960187D013000817CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
